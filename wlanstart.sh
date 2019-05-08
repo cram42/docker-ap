@@ -99,6 +99,8 @@ else
 fi
 echo "Configuring DHCP server .."
 
+echo "" > /config/dhcp-reservations.conf
+
 cat > "/etc/dhcp/dhcpd.conf" <<EOF
 option domain-name-servers 8.8.8.8, 8.8.4.4;
 option subnet-mask 255.255.255.0;
