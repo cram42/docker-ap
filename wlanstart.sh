@@ -99,7 +99,9 @@ else
 fi
 echo "Configuring DHCP server .."
 
-echo "" > /config/dhcp-reservations.conf
+if [ ! -f "/config/dhcp-reservations.conf" ] ; then
+  echo "" > /config/dhcp-reservations.conf
+fi
 
 cat > "/etc/dhcp/dhcpd.conf" <<EOF
 option domain-name-servers 8.8.8.8, 8.8.4.4;
