@@ -1,4 +1,4 @@
-FROM linarotechnologies/alpine:edge
+FROM alpine:edge
 
 MAINTAINER grant.leroux@gmail.com
 
