@@ -3,7 +3,7 @@ FROM alpine:edge
 MAINTAINER grant.leroux@gmail.com
 
 VOLUME /config
-RUN touch /config/dhcp-reservations.conf
+RUN echo "" > /config/dhcp-reservations.conf
 
 RUN apk add --no-cache bash hostapd iptables dhcp docker iproute2 iw
 RUN echo "" > /var/lib/dhcp/dhcpd.leases
