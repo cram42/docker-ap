@@ -108,7 +108,7 @@ option domain-name-servers 8.8.8.8, 8.8.4.4;
 option subnet-mask 255.255.255.0;
 option routers ${AP_ADDR};
 subnet ${SUBNET} netmask 255.255.255.0 {
-  range ${SUBNET::-1}100 ${SUBNET::-1}200;
+  range ${SUBNET::-1}100 ${SUBNET::-1}199;
 }
 include "/config/dhcp-reservations.conf";
 EOF
