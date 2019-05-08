@@ -108,7 +108,7 @@ option routers ${AP_ADDR};
 subnet ${SUBNET} netmask 255.255.255.0 {
   range ${SUBNET::-1}100 ${SUBNET::-1}200;
 }
-include "/config/dhcp-reservations.conf"
+include "/config/dhcp-reservations.conf";
 EOF
 
 echo "Starting DHCP server .."
